@@ -1,0 +1,104 @@
+.cover{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538516895562&di=fce5bd2d5e5a099a6c0a55ece771bbea&imgtype=0&src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1705%2F867-1F5051Q114.jpg') center center no-repeat;
+    background-size: cover;
+    filter: blur(0.5px);
+}
+
+.musicbox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color:#EE3A8C;
+    width: 330px;
+}
+
+.music-panel{
+    border: 1px solid #ee8a87;
+    padding: 20px 20px 5px 20px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5), 0px 2px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.musicbox .control{
+    margin-top: 20px;
+    color: #FF4040;
+    float: left;
+}
+
+.musicbox .control .iconfont{
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.musicbox .music .info{
+    color:#FF4040;
+    margin-left:150px;
+    padding-top:15px;
+}
+
+.musicbox .music .info .title{
+    font-size: 16px;
+}
+
+.musicbox .music .info .auther{
+    font-size: 16px;
+}
+
+.musicbox .progress{
+    width:260px;
+}
+
+.musicbox .progress .bar{
+    height: 3px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.musicbox .progress .progress-now{
+    background-color: #ee8a87;
+    height: 3px;
+    width: 0;
+    position: relative;
+}
+
+.music .time{
+    text-align: right;
+}
+
+.music:after,
+.musicbox .music:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.musicbox .list>li{
+    position: relative;
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-top: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.musicbox .list>li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.musicbox .list>li.playing:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.9);
+}
