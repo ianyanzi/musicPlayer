@@ -68,7 +68,7 @@ $('.musicbox .play').onclick = function(){
 
 function getMusicList(calback){
     var xhr = new XMLHttpRequest()
-    xhr.open('GET','/music.json',true)
+    xhr.open('GET','../music.json',true)
     xhr.onload = function(){
         if((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304){
             calback(JSON.parse(this.responseText))
