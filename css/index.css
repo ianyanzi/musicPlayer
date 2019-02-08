@@ -1,4 +1,4 @@
-.cover{
+.cover {
     position: absolute;
     content: '';
     display: block;
@@ -9,7 +9,7 @@
     filter: blur(0.5px);
 }
 
-.musicbox{
+.musicbox {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -18,68 +18,67 @@
     width: 330px;
 }
 
-.music-panel{
-    border: 1px solid #ee8a87;
-    padding: 20px 20px 5px 20px;
+.music-panel {
+    border: 1px solid rgb(112, 97, 97);
+    padding: 50px 20px 20px 30px;
     background-color: rgba(255,255,255,0.9);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5), 0px 2px 10px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 0px rgba(206, 115, 115, 0.5), 0px 2px 10px 0px rgba(226, 38, 38, 0.8);
 }
 
-.musicbox .control{
+.musicbox .control {
     margin-top: 20px;
-    color: #FF4040;
     float: left;
 }
 
-.musicbox .control .iconfont{
+.musicbox .control .iconfont {
+    font-size: 30px;
     margin-right: 12px;
     cursor: pointer;
 }
 
-.musicbox .music .info{
-    color:#FF4040;
-    margin-left:150px;
-    padding-top:15px;
+.musicbox .music .info {
+    color:rgb(107, 39, 39);
+    text-shadow: 1px 2px 2px;
+    margin-left:180px;
+    padding-top:10px;
 }
 
-.musicbox .music .info .title{
+.musicbox .music .info .title,.musicbox .music .info .auther {
+    padding: 2px;
     font-size: 16px;
 }
 
-.musicbox .music .info .auther{
-    font-size: 16px;
-}
-
-.musicbox .progress{
+.musicbox .progress {
     width:260px;
 }
 
-.musicbox .progress .bar{
+.musicbox .progress .bar {
     height: 3px;
-    margin-top: 5px;
+    margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
-.musicbox .progress .progress-now{
+.musicbox .progress .progress-now {
     background-color: #ee8a87;
     height: 3px;
     width: 0;
     position: relative;
 }
 
-.music .time{
+.musicbox .progress .time {
+    margin-top: 15px;
     text-align: right;
 }
 
 .music:after,
-.musicbox .music:after{
+.musicbox .music:after {
     content: '';
     display: block;
     clear: both;
 }
 
-.musicbox .list>li{
+.musicbox .list > li {
     position: relative;
     padding: 4px 10px;
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -88,11 +87,11 @@
     cursor: pointer;
 }
 
-.musicbox .list>li:hover{
+.musicbox .list>li:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.musicbox .list>li.playing:before{
+.musicbox .list > li.playing:before {
     position: absolute;
     top: 0;
     left: 0;
